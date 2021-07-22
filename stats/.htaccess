@@ -1,0 +1,7 @@
+AuthName "marrakesh.space statistics"
+AuthType Basic
+AuthUserFile /home/marrakesh/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
